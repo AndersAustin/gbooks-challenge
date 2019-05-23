@@ -3,18 +3,26 @@
     <title>Google Books Search Engine</title>
     <!-- fetch polyfill if your browser doesn't support fetch -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div id="search-area">
-      <input id="search-bar" type="text" placeholder="Input search term here">
-      <button id="search-btn">Search</button>
+      <span id = 'title' >Google Books Search Engine</span>
+        <form id = 'search-form'>
+          <input id="search-bar" type="text" placeholder="Search for books">
+          <button id="search-btn"><i class = 'fa fa-search'></i></button>
+        </form>
+    </div>
+    <div id = 'titleImgContainer'>
+      <img id = 'titleImg' src = './images/library.png'/>
+      <div id = 'imgText'>Find Your Next Adventure</div>
     </div>
     <div id="results-area">
-      <ul id="results"></ul>
+      <!-- <ul id="results"></ul> -->
     </div>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
     <!-- for babel transpilation -->
-    <!-- <script src="main.min.js"></script> -->
+    <script src="main.min.js"></script>
   </body>
 </html>
